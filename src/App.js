@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+
+import ResponsiveAppBar from "./ResponsiveAppBar";
+
+import "@fontsource/roboto/400.css";
+import Button from "@mui/material/Button";
+import SaveIcon from "@mui/icons-material/Save";
+import PrimarySearchAppBar from "./PrimarySearchAppBar.js";
+import BasicTable from "./BasicTable";
+import Hero from "./Hero.js"
 
 function App() {
   return (
     <div className="App">
-             <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ResponsiveAppBar />
+      <PrimarySearchAppBar />
+      <Hero/>
+      <BasicTable/>
+      <Button
+        startIcon={<SaveIcon />}
+        endIcon={<SaveIcon />}
+        onClick={() => alert("Hiii")}
+        sx={{
+          fontSize: "1.5rem",
+        }}
+        variant="contained"
+        color="secondary"
+      >
+        Hello World
+      </Button>
     </div>
   );
 }

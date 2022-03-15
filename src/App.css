@@ -123,22 +123,22 @@ html {
 .step-style {
   font-size: 1.5em;
   color: white;
+  padding: 0.8rem;
 }
 
 .star-answer {
   width: 80%;
   border-bottom: 1px solid lightgray;
   word-wrap: break-word;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .star-wrap {
   border-bottom-left-radius: 5px;
   border-bottom: none;
   padding: 0.8rem;
-}
-
-.star-icon {
-  width: 3.5rem;
 }
 
 .star-tags {

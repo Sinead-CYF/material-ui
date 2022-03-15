@@ -1,3 +1,5 @@
+import { Typography } from "@mui/material";
+import Image from "mui-image";
 import React from "react";
 import StarIcon from "./custom-star.png";
 import Box from "@mui/material/Box";
@@ -11,9 +13,9 @@ export default function StarUI() {
           backgroundColor: "primary.main",
         }}
       >
-        <p className="intro-text">
+        <Typography variant="body1" className="intro-text">
           lorem ipsum blah blah blah blah blah blah blah
-        </p>
+        </Typography>
       </Box>
 
       <Box className="star-wrapper">
@@ -24,10 +26,20 @@ export default function StarUI() {
               backgroundColor: "primary.main",
             }}
           >
-            <p className="step-style">S</p>
+            <Typography variant="h4" className="step-style">
+              S
+            </Typography>
           </Box>
           <Box className="star-answer">
-            <p>lorem lorem lorem</p>
+            <Typography
+              variant="body1"
+              sx={{
+                maxWidth: "100%",
+                padding: "0.5rem",
+              }}
+            >
+              lorem lorem lorem
+            </Typography>
           </Box>
         </Box>
 
@@ -38,10 +50,20 @@ export default function StarUI() {
               backgroundColor: "primary.main",
             }}
           >
-            <p className="step-style">T</p>
+            <Typography variant="h4" className="step-style">
+              T
+            </Typography>
           </Box>
           <Box className="star-answer">
-            <p>lorem lorem lorem</p>
+            <Typography
+              variant="body1"
+              sx={{
+                maxWidth: "100%",
+                padding: "0.5rem",
+              }}
+            >
+              lorem lorem lorem
+            </Typography>
           </Box>
         </Box>
 
@@ -52,10 +74,20 @@ export default function StarUI() {
               backgroundColor: "primary.main",
             }}
           >
-            <p className="step-style">A</p>
+            <Typography variant="h4" className="step-style">
+              A
+            </Typography>
           </Box>
           <Box className="star-answer">
-            <p>lorem lorem lorem</p>
+            <Typography
+              variant="body1"
+              sx={{
+                maxWidth: "100%",
+                padding: "0.5rem",
+              }}
+            >
+              lorem lorem lorem
+            </Typography>
           </Box>
         </Box>
 
@@ -66,10 +98,20 @@ export default function StarUI() {
               backgroundColor: "primary.main",
             }}
           >
-            <p className="step-style">R</p>
+            <Typography variant="h4" className="step-style">
+              R
+            </Typography>
           </Box>
           <Box className="star-answer">
-            <p>lorem lorem lorem</p>
+            <Typography
+              variant="body1"
+              sx={{
+                maxWidth: "100%",
+                padding: "0.5rem",
+              }}
+            >
+              lorem lorem lorem
+            </Typography>
           </Box>
         </Box>
 
@@ -80,7 +122,14 @@ export default function StarUI() {
               backgroundColor: "primary.main",
             }}
           >
-            <img className="star-icon" src={StarIcon} alt="star icon"></img>
+            {/* <img className="star-icon" src={StarIcon} alt="star icon"></img> */}
+            <Image
+              src={StarIcon}
+              width={65}
+              className="star-icon"
+              alt="star icon"
+            />
+            {/* <Avatar alt="star icon" src={StarIcon} /> */}
           </Box>
           <Box className="star-answer star-tags">
             <p>x tag</p> <p>x tag</p> <p>x tag</p>

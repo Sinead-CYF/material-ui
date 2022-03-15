@@ -1,7 +1,7 @@
 import { Typography } from "@mui/material";
 import Image from "mui-image";
 import React from "react";
-import StarIcon from "./custom-star.png";
+import StarIcon from "C:/Users/Sinea/Desktop/Code your Future/Projects/material-ui/src/images/custom-star.png";
 import Box from "@mui/material/Box";
 
 export default function StarUI() {

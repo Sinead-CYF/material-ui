@@ -1,61 +1,92 @@
 import React from "react";
-import StarIcon from './customer-star.png';
+import StarIcon from "./custom-star.png";
+import Box from "@mui/material/Box";
 
 export default function StarUI() {
   return (
-    <div className="outer-wrapper">
-      <div className="intro-wrapper">
-        <p className="intro-text">lorem ipsum blah blah blah blah blah blah blah</p>
-      </div>
+    <Box className="outer-wrapper">
+      <Box
+        className="intro-wrapper "
+        sx={{
+          backgroundColor: "primary.main",
+        }}
+      >
+        <p className="intro-text">
+          lorem ipsum blah blah blah blah blah blah blah
+        </p>
+      </Box>
 
-      <div className="star-wrapper">
-        <div className="star-row">
-          <div className="star-step">
+      <Box className="star-wrapper">
+        <Box className="star-row">
+          <Box
+            className="star-step"
+            sx={{
+              backgroundColor: "primary.main",
+            }}
+          >
             <p className="step-style">S</p>
-          </div>
-          <div className="star-answer">
+          </Box>
+          <Box className="star-answer">
             <p>lorem lorem lorem</p>
-          </div>
-        </div>
+          </Box>
+        </Box>
 
-        <div className="star-row">
-          <div className="star-step">
+        <Box className="star-row">
+          <Box
+            className="star-step"
+            sx={{
+              backgroundColor: "primary.main",
+            }}
+          >
             <p className="step-style">T</p>
-          </div>
-          <div className="star-answer">
+          </Box>
+          <Box className="star-answer">
             <p>lorem lorem lorem</p>
-          </div>
-        </div>
+          </Box>
+        </Box>
 
-        <div className="star-row">
-          <div className="star-step">
+        <Box className="star-row">
+          <Box
+            className="star-step"
+            sx={{
+              backgroundColor: "primary.main",
+            }}
+          >
             <p className="step-style">A</p>
-          </div>
-          <div className="star-answer">
+          </Box>
+          <Box className="star-answer">
             <p>lorem lorem lorem</p>
-          </div>
-        </div>
+          </Box>
+        </Box>
 
-        <div className="star-row">
-          <div className="star-step">
+        <Box className="star-row">
+          <Box
+            className="star-step"
+            sx={{
+              backgroundColor: "primary.main",
+            }}
+          >
             <p className="step-style">R</p>
-          </div>
-          <div className="star-answer">
+          </Box>
+          <Box className="star-answer">
             <p>lorem lorem lorem</p>
-          </div>
-        </div>
+          </Box>
+        </Box>
 
-        <div className=" star-row star-row-last">
-          <div className=" star-step star-wrap">
-                <img className="star-icon"src={StarIcon} alt="star icon"></img>
-              </div>
-          <div className="star-answer star-tags">
+        <Box className=" star-row star-row-last">
+          <Box
+            className="star-step star-wrap"
+            sx={{
+              backgroundColor: "primary.main",
+            }}
+          >
+            <img className="star-icon" src={StarIcon} alt="star icon"></img>
+          </Box>
+          <Box className="star-answer star-tags">
             <p>x tag</p> <p>x tag</p> <p>x tag</p>
-          </div>
-        </div>
-      </div>
-    </div>
+          </Box>
+        </Box>
+      </Box>
+    </Box>
   );
 }
-
-

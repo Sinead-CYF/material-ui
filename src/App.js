@@ -12,7 +12,7 @@ import themeDark from './themeDark';
 
 function App() {
   return (
-    <ThemeProvider theme={themeMUI}>
+    <ThemeProvider theme={themeDark}>
       <div className="App">
         <ResponsiveAppBar />
         <PrimarySearchAppBar />

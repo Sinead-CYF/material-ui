@@ -6,7 +6,7 @@ export default function StarUI() {
   return (
     <div className="outer-wrapper">
       <div className="intro-wrapper">
-        <p>lorem ipsum blah blah blah blah blah blah blah</p>
+        <p className="intro-text">lorem ipsum blah blah blah blah blah blah blah</p>
       </div>
 
       <div className="star-wrapper">

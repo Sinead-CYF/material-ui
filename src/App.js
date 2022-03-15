@@ -16,18 +16,19 @@ function App() {
       <ResponsiveAppBar />
       <PrimarySearchAppBar />
       <StarUI/>
-      <BasicTable/>
       <Button
         endIcon={<ShareIcon/>}
-        onClick={() => alert("Hiii")}
         sx={{
           fontSize: "1.5rem",
+          marginBottom: "2rem"
         }}
         variant="contained"
         color="secondary"
       >
         Share Star
       </Button>
+      <BasicTable/>
+  
     </div>
   );
 }

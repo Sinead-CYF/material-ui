@@ -1,5 +1,4 @@
 import React from "react";
-// import { yellow } from '@mui/material/colors';
 import StarIcon from './customer-star.png';
 
 export default function StarUI() {

@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
 }
 
 * {
@@ -75,7 +75,9 @@ html {
   border-bottom: 1px solid lightgray;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
+  /* background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%); */ /* DarBlue-theme */
+  /* background-color: #d12f2f; */ /* CYF-theme */
+  background-color: #1976d2; /* MUI-theme */
 }
 
 .intro-wrapper p {
@@ -107,10 +109,15 @@ html {
 }
 
 .star-step {
-  width: 18%;
+  width: 20%;
   min-width: 70px;
   border-bottom: 1px solid lightgray;
-  background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
+  /* background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%); */ /* DarkBlue-theme */
+  /* background-color: #d12f2f; */ /* CYF-theme */
+  background-color:#1976d2; /* MUI-theme */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .step-style {
@@ -127,17 +134,18 @@ html {
 .star-wrap {
   border-bottom-left-radius: 5px;
   border-bottom: none;
+  padding: 0.8rem;
 }
 
 .star-icon {
-  width: 4rem;
-  padding: 0.5rem;
+  width: 3.5rem;
 }
 
 .star-tags {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
   border-bottom-right-radius: 5px;
   border-bottom: none;
 }
@@ -145,6 +153,5 @@ html {
 p {
   margin: 1rem;
   height: fit-content;
-  /* border: 1px solid white; */
   background-color: transparent;
 }

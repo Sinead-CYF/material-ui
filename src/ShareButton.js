@@ -11,7 +11,7 @@ export default function ShareButton() {
         marginBottom: "2rem",
       }}
       variant="contained"
-      color="secondary"
+      color="primary"
     >
       Share Star
     </Button>

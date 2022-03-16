@@ -1,21 +1,32 @@
 import React from "react";
-
-// export default function Hero() {
-//   return (
-//     <div className="hero-image">
-//       <div className="hero-text">
-//         <h1>I am John Doe</h1>
-//         <p>And I'm a Photographer</p>
-//         <button>Hire me</button>
-//       </div>
-//     </div>
-//   );
-// }
+import { Typography } from "@mui/material";
+import Box from "@mui/material/Box";
+import {Button} from "@mui/material";
 
 export default function Hero() {
   return (
-    <section className=" hero center px3 py4 white">
-      <h1 className="h1 h0-responsive mt4 mb0 regular">Hero Image</h1>
-    </section>
+    <Box component="section" className="hero">
+      <Box className="hero-content">
+        <Typography variant="h1" className="hero-title">
+          Welcome to Sirius
+        </Typography>
+
+        <Typography variant="body" className="hero-subtitle">
+          The interview preparation tool utilising STAR methodology
+        </Typography>
+
+        <Button
+          sx={{
+            fontSize: "1.5rem",
+            marginBottom: "2rem",
+            width: "fit-content", 
+          }}
+          variant="contained"
+          color="primary"
+        >
+          ENTER
+        </Button>
+      </Box>
+    </Box>
   );
 }

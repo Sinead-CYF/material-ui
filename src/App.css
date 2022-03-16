@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  /* background-color: aliceblue; */
 }
 
 * {
@@ -9,54 +8,8 @@
   margin: 0;
 }
 
-/* body,
-html {
-  height: 50%;
-}
-
-
-
-.hero-image {
-  background-image: linear-gradient(rgba(228, 27, 27, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://i.ibb.co/J72gV5m/g-F9-VHxp-star-backrounds.jpg");
-  height: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: red;
-} */
-
-
-.hero {
-  display: block;
-  width: 50%;
-  height: 50vh;
-  background-image: url(https://i.ibb.co/vJcBTWr/star-wallpapers-22.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.hero h1 {
-  font-family: Myriad Pro;
-  color: #fff;
-}
 
 /* star */
-
 .outer-wrapper {
   border: 1px solid lightgray;
   min-width: 320px;
@@ -75,9 +28,6 @@ html {
   border-bottom: 1px solid lightgray;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  /* background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%); */ /* DarBlue-theme */
-  /* background-color: #d12f2f; */ /* CYF-theme */
-  background-color: #1976d2; /* MUI-theme */
 }
 
 .intro-wrapper p {
@@ -112,9 +62,6 @@ html {
   width: 20%;
   min-width: 70px;
   border-bottom: 1px solid lightgray;
-  /* background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%); */ /* DarkBlue-theme */
-  /* background-color: #d12f2f; */ /* CYF-theme */
-  background-color:#1976d2; /* MUI-theme */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -155,3 +102,58 @@ p {
   height: fit-content;
   background-color: transparent;
 }
+
+/* hero */
+
+/*
+https://i.ibb.co/JcF7Tyk/Situation-Task-Action-Result.jpg 2
+https://i.ibb.co/8chc38c/d-Uvi-Fek-stars-backgrounds.jpg 1
+https://i.ibb.co/pbTvhVw/pexels-suzy-hazelwood-1124884.jpg 3
+https://i.ibb.co/PWLYrZV/ALo-NVt-R-stars-background-wallpaper.jpg
+https://i.ibb.co/MSJpHWh/g-F9-VHxp-star-backrounds.jpg
+
+*/
+
+.hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(https://i.ibb.co/pbTvhVw/pexels-suzy-hazelwood-1124884.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  filter: brightness(50%);
+}
+
+.hero-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.hero-title {
+  margin: 0;
+}
+
+.hero-subtitle {
+  margin-bottom: 1rem;
+}
+
+
+

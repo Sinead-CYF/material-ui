@@ -8,7 +8,7 @@ import themeMUI from './themes/themeMUI';
 import themeCYF from './themes/themeCYF';
 import themeDark from './themes/themeDark';
 import CustomAppBar from "./Components/Header";
-import Hero from "./unusedComponents/Hero";
+import Hero from "./Components/Hero";
 
 function App() {
   return (
